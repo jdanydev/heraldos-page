@@ -647,7 +647,7 @@ main {
   .footer__separator,
   .main__items__separator,
   .main__items__item__title,
-  .main__why__item:nth-last-child(-n + 3),
+  .main__why__item:nth-last-child(-n + 4),
   .main__benefit__item:nth-last-child(-n + 4),
   .main__method__item:nth-last-child(-n + 4) {
     display: none;
@@ -730,5 +730,17 @@ main {
   }
   main{
     align-items: unset;
+  }
+
+  .main__intro__desc{
+    margin-right: 0;
+  }
+
+  .main__why__left, .main__why__right{
+    display: flex;
+    align-items: center;
+  }
+  .main__why__left img, .main__why__right img{
+    width: 64px;
   }
 }
