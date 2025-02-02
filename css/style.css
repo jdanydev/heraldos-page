@@ -40,7 +40,8 @@ header {
 .header__button button,
 .main__hero button,
 .main__about__button button,
-.main__why__item button {
+.main__why__item button,
+.main__contact__form__button button {
   background: linear-gradient(90deg, #8176af, #c0b7e8);
   color: black;
   padding: 10px 30px;
@@ -85,7 +86,7 @@ button.outline {
 }
 main {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
 }
 .main__hero__text__button {
   display: flex;
@@ -328,8 +329,8 @@ main {
   width: 60%;
 }
 
-.main__benefit__hero{
-  background-image: url('../assets/benefit1.png');
+.main__benefit__hero {
+  background-image: url("../assets/benefit1.png");
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
@@ -340,47 +341,47 @@ main {
   flex-direction: column;
 }
 
-.main__benefit__title{
+.main__benefit__title {
   font-size: 2.25rem;
   text-align: center;
   font-weight: bold;
 }
-.main__benefit__sub{
+.main__benefit__sub {
   font-size: 2.25rem;
   text-align: center;
   font-weight: lighter;
 }
-.main__benefit__chevron{
+.main__benefit__chevron {
   display: flex;
   justify-content: center;
 }
-.main__benefit__img{
+.main__benefit__img {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #433D60;
+  border: 2px solid #433d60;
   border-radius: 50%;
   width: 70px;
-  height: 70px;  
+  height: 70px;
   background: linear-gradient(to left, #c0b7e8, #8176af);
-  transform: translate(0,-50%);
-  box-shadow: 0 0 10px 15px  rgba(0, 0, 0, 0.5);  
+  transform: translate(0, -50%);
+  box-shadow: 0 0 10px 15px rgba(0, 0, 0, 0.5);
 }
 
-.main__benefit__items{
+.main__benefit__items {
   display: flex;
   justify-content: space-between;
-  top: -20px;  
+  top: -20px;
   position: relative;
 }
-.main__benefit__item h3{
+.main__benefit__item h3 {
   font-size: 2.25rem;
   font-weight: bold;
   text-align: center;
   margin-top: 20px;
 }
 
-.main__method__item__circle{
+.main__method__item__circle {
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -388,29 +389,101 @@ main {
   justify-content: center;
   align-items: center;
   background: linear-gradient(to left, #c0b7e8, #8176af);
-  box-shadow: 0 0 10px 15px  rgba(13, 13, 13, 0.32);  
+  box-shadow: 0 0 10px 15px rgba(13, 13, 13, 0.32);
   font-size: 4rem;
   font-weight: bold;
   color: #343045;
 }
 
-.main__method__items{
+.main__method__items {
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;  
+  margin-top: 50px;
 }
 
-.main__method__item__desc{
+.main__method__item__desc {
   display: flex;
-  align-items: center;  
+  align-items: center;
 }
 
-.main__method__item{
+.main__method__item {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.main__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: radial-gradient(#403a5f, #211e2e);
+  border-radius: 100px;
+  padding: 64px;
+}
+
+.main__contact__title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.main__contact__title h3 {
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+.main__contact__sub {
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: lighter;
+}
+
+.main__contact__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 32px;
+  column-gap: 8px;
+  margin-top: 50px;
+}
+
+.main__contact__form__group:nth-child(5) {
+  grid-column: 1/3;
+}
+.main__contact__form__group:nth-child(6) {
+  grid-column: 1/3;
+}
+.main__contact__form input,
+.main__contact__form textarea {
+  border-radius: 40px;
+  height: 54px;
+  width: 100%;
+  background-color: transparent;
+  border: white 2px solid;
+  padding: 30px;
+  font-size: 0.875rem;
+  color: white;
+}
+.main__contact__form textarea {
+  height: auto;
+}
+
+.main__contact__form__button {
+  grid-column: 1/3;
+  text-align: center;
+}
+
+.main__contact__separator {
+  width: 30%;
+  height: 1px;
+  background: linear-gradient(
+    to left,
+    #343045,
+    #c0b7e8 35%,
+    #8176af 69%,
+    #343045 100%
+  );
+}
 @media screen and (max-width: 768px) {
   body {
     width: 100%;
@@ -425,12 +498,11 @@ main {
   .header__hamburger,
   .main__items_nav img,
   .main__why__left,
-  .main__why__right
-  {
+  .main__why__right {
     display: block;
   }
 
-  .main__benefit__mov{
+  .main__benefit__mov {
     display: flex;
     align-items: center;
     width: 60px;
@@ -472,7 +544,8 @@ main {
     padding-right: 5px;
   }
 
-  .main__hero__img img,.main__method__items {
+  .main__hero__img img,
+  .main__method__items {
     width: 100%;
   }
 
@@ -488,8 +561,7 @@ main {
   .main__benefit__item:nth-last-child(-n + 3),
   .main__method__item:nth-last-child(-n + 3),
   .main__benefit__chevron,
-  .main__method__item__desc img
-   {
+  .main__method__item__desc img {
     display: none;
   }
 
@@ -508,33 +580,45 @@ main {
     gap: 16px;
   }
 
-  .main__about_img img, .main__benefit__mov img {
+  .main__about_img img,
+  .main__benefit__mov img {
     width: 100%;
   }
 
-  .main__benefit__items{
+  .main__benefit__items {
     width: 100%;
     justify-content: space-around;
     margin-top: 50px;
-    position:unset;
+    position: unset;
   }
 
-  .main__benefit__hero{
+  .main__benefit__hero {
     height: 273px;
     background-image: url(../assets/benefit2.png);
     background-size: contain;
   }
-  .main__benefit__titl, .main__benefit__sub{
-    font-size: 2.0625rem;    
+  .main__benefit__titl,
+  .main__benefit__sub,
+  .main__contact__title h3,
+  .main__contact__sub {
+    font-size: 2.0625rem;
   }
 
-  .main__method__item{    
-    gap: 20px
+  .main__method__item {
+    gap: 20px;
   }
-  .main__method__items{
+  .main__method__items {
     justify-content: space-around;
   }
-  
+  .main__contact__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main__contact__form__button button {
+    width: 100%;
+  }
+   
 }
 
 @media screen and (max-width: 425px) {
@@ -542,6 +626,7 @@ main {
     padding: 20px;
     gap: 0;
   }
+  
   .header__logo img {
     width: 70px;
   }
@@ -563,9 +648,8 @@ main {
   .main__items__separator,
   .main__items__item__title,
   .main__why__item:nth-last-child(-n + 3),
-  .main__benefit__item:nth-last-child(-n + 4), 
-  .main__method__item:nth-last-child(-n + 4) 
-  {
+  .main__benefit__item:nth-last-child(-n + 4),
+  .main__method__item:nth-last-child(-n + 4) {
     display: none;
   }
   .main__hero__text__title_alt {
@@ -615,17 +699,36 @@ main {
     width: 60px;
   }
 
-  .main__benefit__items{
-    margin-top: 30px;    
+  .main__benefit__items, .main__contact__form {
+    margin-top: 30px;
   }
 
-  .main__benefit__hero{
+  .main__benefit__hero {
     height: 172px;
     background-image: url(../assets/benefit3.png);
     background-size: contain;
   }
-  .main__benefit__title, .main__benefit__sub{
-    font-size: 1.2rem;    
+  .main__benefit__title,
+  .main__benefit__sub,
+  .main__contact__title h3,
+  .main__contact__sub {
+    font-size: 1.2rem;
   }
-  
+
+  .main__contact__separator{
+    width: 50%;
+  }
+
+  .main__contact{
+    padding: 16px;
+    border-radius: 40px;
+  }
+
+  .main__contact__form__group input{
+    height: auto;
+    padding: 16px;
+  }
+  main{
+    align-items: unset;
+  }
 }
