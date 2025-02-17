@@ -7,17 +7,15 @@ main {
     height: 300px;
     @include flex(column, "", center, center, "");
     div {
-      div {
-        &:first-child {
-          font-size: 2.25rem;
-          text-align: center;
-          font-weight: bold;
-        }
-        &:last-child {
-          font-size: 2.25rem;
-          text-align: center;
-          font-weight: lighter;
-        }
+      h2 {
+        font-size: 2.25rem;
+        text-align: center;
+        font-weight: bold;
+      }
+      h3 {
+        font-size: 2.25rem;
+        text-align: center;
+        font-weight: lighter;
       }
     }
   }
@@ -41,7 +39,7 @@ main {
 
   .main__benefit__items {
     @include flex("", "", space-between, "", "");
-   top: -20px;
+    top: -20px;
     position: relative;
   }
 }

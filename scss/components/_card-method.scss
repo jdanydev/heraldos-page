@@ -1,6 +1,6 @@
 .main__method__item {
   @include flex(column, "", "", center, "");
-  div {
+  p {
     &:first-child {
       @include flex("", "", center, center, "");
       width: 200px;
@@ -16,8 +16,8 @@
       font-weight: bold;
       color: map-get($colores, color5);
     }
-    &:last-child {
-      @include flex("", "", "", center, "");
-    }
+  }
+  div {
+    @include flex("", "", "", center, "");
   }
 }
