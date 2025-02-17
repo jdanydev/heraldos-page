@@ -1,0 +1,33 @@
+@import "./base/typography";
+
+/* 1°  llamamos a todo lo que este en la carpeta utilities*/
+@import "./utilities/variables";
+@import "./utilities/mixins";
+@import "./utilities/maps";
+
+/* 2° vamos a llamar a la carpeta base */
+@import "./base/reset";
+/* 3° vamos a llamar a la carpeta layout */
+
+@import "./layout/header";
+@import "./layout/body";
+@import "./layout/main-index";
+@import "./layout/main-intro";
+@import "./layout/main-benefit";
+@import "./layout/main-method";
+@import "./layout/main-contact";
+@import "./layout/main-horario";
+@import "./layout/footer";
+
+
+/* 4° vamos a llamar a la carpeta components */
+@import "./components/card-item";
+@import "./components/card-about";
+@import "./components/card-benefit";
+@import "./components/card-method";
+@import "./components/botones";
+/* 5° vamos a llamar a la carpeta mediaQ */
+// @import "./layout/media/media1024";
+@import "./layout/media/media1024";
+@import "./layout/media/media768";
+@import "./layout/media/media425";

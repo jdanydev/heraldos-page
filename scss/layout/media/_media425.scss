@@ -1,0 +1,164 @@
+@media screen and (max-width: 425px) {
+  body {
+    padding: 20px;
+    gap: 0;
+  }
+
+  header {
+    .header__logo {
+      img {
+        width: 70px;
+      }
+      h1 {
+        font-size: 1.875rem;
+      }
+    }
+    .header__hamburger img {
+      width: 35px;
+    }
+  }
+  main {
+    align-items: unset;
+    .main__hero {
+      margin-top: 30px;
+      flex-direction: column-reverse;
+      align-items: center;
+      .main__hero__text {
+        width: 100%;
+      }
+      .main__hero__text__title_alt {
+        display: block;
+        font-size: 1.5rem;
+        margin: 50px 0;
+        text-align: center;
+      }
+    }
+
+    .main__items {
+      gap: 0;
+      margin-top: 30px;
+
+      .main__items__item {
+        flex-grow: 1;
+        max-width: 70%;
+        div {
+          &:last-child {
+            grid-column: 2;
+            grid-row: 1 / 2;
+            align-self: center;
+            font-size: 0.875rem;
+          }
+        }
+        img {
+          width: 60px;
+        }
+      }
+      .main__items_nav {
+        img {
+          width: 40px;
+        }
+      }
+    }
+    button {
+      width: 100%;
+    }
+    .main__why {
+      button {
+        width: 100%;
+      }
+    }
+    .main__benefit__hero {
+      div {
+        div {
+          font-size: 1.2rem !important;
+        }
+      }
+    }
+    .main__contact {
+      padding: 16px;
+      border-radius: 40px;
+
+      form{
+        margin-top: 30px;
+      }
+
+      .main__contact__title {
+        h3{
+          font-size: 1.2rem;
+        }
+        div{
+          &:last-child{
+          font-size: 1.2rem;
+          }
+        }
+        .main__contact__separator {
+          width: 50%;
+        }
+      }
+
+    }
+  }
+
+  .main__hero__text__button img,
+  .main__hero__text__title,
+  .main__items__item:nth-last-child(4),
+  .footer__separator,
+  .main__items__separator,
+  .main__items__item__title,
+  .main__why__item:nth-last-child(-n + 4),
+  .main__benefit__item:nth-last-child(-n + 4),
+  .main__method__item:nth-last-child(-n + 4) {
+    display: none;
+  }
+
+  .special__title {
+    font-size: 2.25rem;
+  }
+
+  footer {
+    margin-top: 50px;
+
+    .footer__top {
+      @include flex(column, "", "", center, "");
+    }
+    .footer__copy__text {
+      margin: 0 80px;
+      line-height: 1.5rem;
+      letter-spacing: 13%;
+    }
+  }
+
+  .main__benefit__items{
+    margin-top: 30px;
+  }
+
+  .main__benefit__hero {
+    height: 172px;
+    background-image: url(../assets/benefit3.png);
+    background-size: contain;
+  }
+  .main__benefit__title,
+  .main__benefit__sub,
+  .main__contact__title h3,
+  .main__contact__sub {
+    font-size: 1.2rem;
+  }
+
+  .main__contact__form__group input {
+    height: auto;
+    padding: 16px;
+  }
+
+  .main__intro__desc {
+    margin-right: 0;
+  }
+
+  .main__why__left,
+  .main__why__right {
+    @include flex("","","",center,"");    
+  }
+  .main__why__left img,
+  .main__why__right img {
+    width: 64px;
+  }
+}

@@ -1,0 +1,59 @@
+header {
+  @include flex("", "", space-around, center, "");
+  .header__button {
+    @include flex("", wrap, "", center, 10px);
+  }
+  .header__logo {
+    @include flex("", "", "", center, 10px);
+    h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+  }
+  nav {
+    margin: auto 3.125rem;
+    ul {
+      @include flex("", "", "", "", 20px);
+      li {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 0.75rem;
+      }
+    }
+  }
+  .header__hamburger{
+    .close{
+      display: none;
+    }
+    .open{
+      display:none;
+    }
+  }
+  .menu__hamburger {
+    position: absolute;
+    float: left;
+    right: 0;
+    width: 50%;
+    z-index: 99;
+    border: 3px solid map-get($colores, text);
+    padding: 5% 0;
+    background-color: map-get($colores, bg);
+    transform: translateY(200px);
+    nav {
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+    }
+    display: none;
+  }
+}
+.header__hamburger,
+.main__hero__text__title_alt,
+.main__items_nav img,
+.main__why__left,
+.main__why__right,
+.main__benefit__mov {
+  display: none;
+}

@@ -1,0 +1,51 @@
+main {
+  @include flex(column, "", "", "", "");
+
+  .main__hero {
+    @include flex(row, "", "", center, 20px);
+    padding: 1.25rem;
+    .main__hero__img {
+      filter: drop-shadow(0 0 2rem black);
+    }
+    .main__hero__text__button {
+      @include flex("", "", "", center, 10px);
+    }
+    .main__hero__text__title {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    .main__hero__text__title_alt {
+      @extend .main__hero__text__title;
+    }
+    .main__hero__text__description {
+      max-width: 75%;
+      margin: 1.25rem 0;
+    }
+  }
+
+  .special__title {
+    font-size: 2.875rem;
+    background: linear-gradient(
+      to right,
+      map-get($colores, color2),
+      map-get($colores, color1)
+    );
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+
+  .main__items {
+    @include flex(row, "", space-around, "", "");
+    @include box(1.25rem, "", "", 3.75rem);
+    background: radial-gradient(
+      map-get($colores, color3),
+      map-get($colores, color4)
+    );
+    filter: drop-shadow(0 4 0.25rem map-get($colores, negro));
+  }
+  .main__items__separator {
+    width: 1px;
+    background-color:  map-get($colores, color2);
+    opacity: 0.33;
+  }
+}

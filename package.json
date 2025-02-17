@@ -1,0 +1,21 @@
+{
+  "name": "heraldos",
+  "version": "1.0.0",
+  "description": "**COMISIÓN**: 63305",
+  "homepage": "https://github.com/jdanydev/heraldos-page#readme",
+  "bugs": {
+    "url": "https://github.com/jdanydev/heraldos-page/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdanydev/heraldos-page.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./scss/style.scss:./css/style.css"
+  }
+}

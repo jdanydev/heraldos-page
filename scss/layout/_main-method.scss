@@ -1,0 +1,7 @@
+main{
+
+    .main__method__items{
+        @include flex("", "", space-between, "", "");
+        margin-top: 50px;
+    }
+}

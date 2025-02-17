@@ -1,0 +1,12 @@
+body {
+  background-color: map-get($colores, bg);
+  color: map-get($colores, text);
+  max-width: 1440px;
+  @include flex(column, "", "", "", 50px);
+  @include box(50px, auto, "", "");
+}
+
+.container {
+  max-width: 1440px;
+  padding: 50px 84px;
+}

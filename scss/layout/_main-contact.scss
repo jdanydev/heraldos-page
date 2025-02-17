@@ -1,0 +1,69 @@
+main {
+  width: 100%;
+  .main__contact {
+    @include flex(column, "", "", "", 20px);
+    background: radial-gradient(
+      map-get($colores, color7),
+      map-get($colores, color4)
+    );
+    border-radius: 100px;
+    padding: 64px;
+
+
+    .main__contact__title {
+      @include flex(column, "", "", center, 20px);
+      h3 {
+        font-size: 2.25rem;
+        font-weight: bold;
+      }
+      .main__contact__separator {
+        width: 30%;
+        height: 1px;
+        background: linear-gradient(
+          to left,
+          map-get($colores, color5),
+          map-get($colores, color2) 35%,
+          map-get($colores, color1) 69%,
+          map-get($colores, color5) 100%
+        );
+      }
+      .main__contact__sub {
+        text-align: center;
+        font-size: 2.25rem;
+        font-weight: lighter;
+      }
+    }
+
+    form {
+      @include grid(1fr 1fr, "", "", "");
+      row-gap: 32px;
+      column-gap: 8px;
+      margin-top: 50px;
+
+      div {
+        &:nth-child(5),
+        &:nth-child(6) {
+          grid-column: 1/3;
+        }
+        &:last-child {
+          grid-column: 1/3;
+          text-align: center;
+        }
+      }
+    }
+    input {
+      border-radius: 40px;
+      height: 54px;
+      width: 100%;
+      background-color: transparent;
+      border: map-get($colores, text) 2px solid;
+      padding: 30px;
+      font-size: 0.875rem;
+      color: map-get($colores, text);
+    }
+    textarea {
+      @extend input;
+      height: auto;
+    }
+  }
+}

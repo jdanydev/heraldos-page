@@ -27,10 +27,23 @@
         >
           Contáctanos
         </button>
-        <button>Inscripciones</button>
+        <button class="button">Inscripciones</button>
       </div>
       <div class="header__hamburger">
-        <a href="#"><img src="./assets/hamburger.png" alt="Menu" /></a>
+        <a class="open" href="javascript:;" onclick="mostrarMenu() "><img src="./assets/hamburger.png" alt="Menu" /></a>
+        <a class="close" href="javascript:;" onclick="mostrarMenu() "><img src="./assets/close.png" alt="Menu" /></a>
+      </div>
+      <div class="menu__hamburger">
+        <nav>
+          <ul>
+            <li><a href="./">Inicio</a></li>
+            <li><a href="./about.html">Acerca</a></li>
+            <li><a href="./benefit.html">Beneficios</a></li>
+            <li><a href="./method.html">Metodología</a></li>
+            <li><hr></li>
+            <li><a href="./contact.html">Contáctanos</a></li>            
+          </ul>
+        </nav>
       </div>
     </header>
     <main>
@@ -38,24 +51,20 @@
         <div class="main__intro__title">¿COMO TRABAJAMOS</div>
         <div class="main__intro__sub">
           <p>EN HERALDOS?</p>
-          <img src="./assets/outline/arrow-large-right.png" alt="" />
+          <img src="./assets/outline/arrow-large-right.png" alt="Right Arrow" />
         </div>
         <div class="main__intro__desc">
-          Vitae sapien pellentesque habitant morbi tristique senectus et netus
-          et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit
-          amet mauris commodo quis imperdiet massa tincidunt nunc. Viverra
-          aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in.
-          Lectus magna fringilla urna porttitor rhoncus vitae.
+          En Heraldos trabajamos con un enfoque integral, combinando entrenamiento deportivo de alto nivel con el desarrollo personal y valores como el respeto y la disciplina. Nuestros programas están diseñados para todas las edades y niveles, guiados por profesionales especializados. Fomentamos un ambiente familiar y motivador, donde cada miembro se siente parte de una comunidad comprometida con el crecimiento individual y colectivo.
         </div>
       </section>
       <section class="main__method__items">
-        <div class="main__benefit__mov"><img src="./assets/left1.png" alt=""></div>
+        <div class="main__benefit__mov"><img src="./assets/left1.png" alt="Left Nav 2"></div>
         <div class="main__method__item">
           <div class="main__method__item__circle">
             01
           </div>
           <div class="main__method__item__desc">
-            <img src="./assets/outline/arrow-small-right.png" alt="" />
+            <img src="./assets/outline/arrow-small-right.png" alt="Right Arrow" />
             <p>Fundamentos<br />
                 Básicos</p>
           </div>
@@ -65,7 +74,7 @@
             02
           </div>
           <div class="main__method__item__desc">
-            <img src="./assets/outline/arrow-small-right.png" alt="" />
+            <img src="./assets/outline/arrow-small-right.png" alt="Right Arrow" />
             <p>Desarrollo<br />
                 Técnico</p>
           </div>
@@ -75,7 +84,7 @@
             03
           </div>
           <div class="main__method__item__desc">
-            <img src="./assets/outline/arrow-small-right.png" alt="" />
+            <img src="./assets/outline/arrow-small-right.png" alt="Right Arrow" />
             <p>Trabajo en Equipo<br />
                 y Tácticas Básicas</p>
           </div>
@@ -85,13 +94,13 @@
             04
           </div>
           <div class="main__method__item__desc">
-            <img src="./assets/outline/arrow-small-right.png" alt="" />
+            <img src="./assets/outline/arrow-small-right.png" alt="Right Arrow" />
             <p>Práctica en Partidos<br />
                 y Retroalimentación</p>
           </div>
 
         </div>
-        <div class="main__benefit__mov"><img src="./assets/right1.png" alt=""></div>
+        <div class="main__benefit__mov"><img src="./assets/right1.png" alt="Right Nav 2"></div>
       </section>
     </main>
     <footer>
@@ -122,20 +131,20 @@
           <h4>REVISA NUESTRAS REDES</h4>
           <ul>
             <li>
-              <a href="#"><img src="./assets/facebook.png" alt="Facebook" /></a>
+              <a href="https://www.facebook.com/clubheraldoscusco" target="_blank"><img src="./assets/facebook.png" alt="Facebook" /></a>
             </li>
             <li>
-              <a href="#"><img src="./assets/twitter.png" alt="Twitter" /></a>
+              <a href="https://x.com/club_heraldos" target="_blank"><img src="./assets/twitter.png" alt="Twitter" /></a>
             </li>
             <li>
-              <a href="#"><img src="./assets/linkedin.png" alt="LinkedIn" /></a>
+              <a href="https://www.linkedin.com/company/club-baloncesto/about/" target="_blank"><img src="./assets/linkedin.png" alt="LinkedIn" /></a>
             </li>
             <li>
               <a href="#"><img src="./assets/youtube.png" alt="Youtube" /></a>
             </li>
             <li>
-              <a href="#"
-                ><img src="./assets/instagram.png" alt="Instagram"
+              <a href="https://www.instagram.com/clubheraldoscusco/"
+                 target="_blank"><img src="./assets/instagram.png" alt="Instagram"
               /></a>
             </li>
           </ul>
@@ -149,5 +158,6 @@
         </div>
       </section>
     </footer>
+    <script src="./script/script.js"></script>
   </body>
 </html>

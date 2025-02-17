@@ -27,10 +27,23 @@
         >
           Contáctanos
         </button>
-        <button>Inscripciones</button>
+        <button class="button">Inscripciones</button>
       </div>
       <div class="header__hamburger">
-        <a href="#"><img src="./assets/hamburger.png" alt="Menu" /></a>
+        <a class="open" href="javascript:;" onclick="mostrarMenu() "><img src="./assets/hamburger.png" alt="Menu" /></a>
+        <a class="close" href="javascript:;" onclick="mostrarMenu() "><img src="./assets/close.png" alt="Menu" /></a>
+      </div>
+      <div class="menu__hamburger">
+        <nav>
+          <ul>
+            <li><a href="./">Inicio</a></li>
+            <li><a href="./about.html">Acerca</a></li>
+            <li><a href="./benefit.html">Beneficios</a></li>
+            <li><a href="./method.html">Metodología</a></li>
+            <li><hr></li>
+            <li><a href="./contact.html">Contáctanos</a></li>            
+          </ul>
+        </nav>
       </div>
     </header>
     <main>
@@ -46,24 +59,24 @@
         </div>
       </section>
       <section class="main__benefit__items">
-        <div class="main__benefit__mov"><img src="./assets/left1.png" alt=""></div>
+        <div class="main__benefit__mov"><img src="./assets/left1.png" alt="Left Nav 2"></div>
         <div class="main__benefit__item">
-          <img src="./assets/fuerza.png" alt="" />
+          <img src="./assets/fuerza.png" alt="Fuerza" />
           <h3>FORTALEZA</h3>
         </div>
         <div class="main__benefit__item">
-          <img src="./assets/confianza.png" alt="" />
+          <img src="./assets/confianza.png" alt="Confianza" />
           <h3>CONFIANZA</h3>
         </div>
         <div class="main__benefit__item">
-          <img src="./assets/equipo.png" alt="" />
+          <img src="./assets/equipo.png" alt="Equipo" />
           <h3>EQUIPO</h3>
         </div>
         <div class="main__benefit__item">
-          <img src="./assets/habilidad.png" alt="" />
+          <img src="./assets/habilidad.png" alt="Habilidad" />
           <h3>HABILIDAD</h3>
         </div>
-        <div class="main__benefit__mov"><img src="./assets/right1.png" alt=""></div>
+        <div class="main__benefit__mov"><img src="./assets/right1.png" alt="Right Nav 2"></div>
       </section>
     </main>
     <footer>
@@ -94,20 +107,20 @@
           <h4>REVISA NUESTRAS REDES</h4>
           <ul>
             <li>
-              <a href="#"><img src="./assets/facebook.png" alt="Facebook" /></a>
+              <a href="https://www.facebook.com/clubheraldoscusco" target="_blank"><img src="./assets/facebook.png" alt="Facebook" /></a>
             </li>
             <li>
-              <a href="#"><img src="./assets/twitter.png" alt="Twitter" /></a>
+              <a href="https://x.com/club_heraldos" target="_blank"><img src="./assets/twitter.png" alt="Twitter" /></a>
             </li>
             <li>
-              <a href="#"><img src="./assets/linkedin.png" alt="LinkedIn" /></a>
+              <a href="https://www.linkedin.com/company/club-baloncesto/about/" target="_blank"><img src="./assets/linkedin.png" alt="LinkedIn" /></a>
             </li>
             <li>
               <a href="#"><img src="./assets/youtube.png" alt="Youtube" /></a>
             </li>
             <li>
-              <a href="#"
-                ><img src="./assets/instagram.png" alt="Instagram"
+              <a href="https://www.instagram.com/clubheraldoscusco/"
+                 target="_blank"><img src="./assets/instagram.png" alt="Instagram"
               /></a>
             </li>
           </ul>
@@ -121,5 +134,6 @@
         </div>
       </section>
     </footer>
+    <script src="./script/script.js"></script>
   </body>
 </html>

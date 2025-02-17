@@ -22,62 +22,74 @@
         </nav>
         <div class="header__button">
           <button class="outline" onclick="javascript:location.href='./contact.html'">Contáctanos</button>
-          <button>Inscripciones</button>
+          <button class="button">Inscripciones</button>
         </div>
         <div class="header__hamburger">
-          <a href="#"
-            ><img src="./assets/hamburger.png" alt="Menu"></a>
+          <a class="open" href="javascript:;" onclick="mostrarMenu() "><img src="./assets/hamburger.png" alt="Menu" /></a>
+          <a class="close" href="javascript:;" onclick="mostrarMenu() "><img src="./assets/close.png" alt="Menu" /></a>
+        </div>
+        <div class="menu__hamburger">
+          <nav>
+            <ul>
+              <li><a href="./">Inicio</a></li>
+              <li><a href="./about.html">Acerca</a></li>
+              <li><a href="./benefit.html">Beneficios</a></li>
+              <li><a href="./method.html">Metodología</a></li>
+              <li><hr></li>
+              <li><a href="./contact.html">Contáctanos</a></li>            
+            </ul>
+          </nav>
         </div>
       </header>
       <main>
         <section class="main__intro">
             <div class="main__intro__title" >INTRODUCCIÓN</div>
-            <div class="main__intro__sub"><p>AL BASKETBALL</p><img src="./assets/outline/arrow-large-right.png" alt=""/></div>
-            <div class="main__intro__desc">Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.</div>
+            <div class="main__intro__sub"><p>AL BASKETBALL</p><img src="./assets/outline/arrow-large-right.png" alt="Left Arrow"/></div>
+            <div class="main__intro__desc">El baloncesto es un deporte dinámico y emocionante que combina habilidad, estrategia y trabajo en equipo. Jugado entre dos equipos de cinco jugadores cada uno, el objetivo es anotar puntos lanzando el balón a través de un aro elevado. Con su ritmo rápido y jugadas espectaculares, es uno de los deportes más populares del mundo..</div>
         </section>
         <section class="main__about">
-            <div class="main__about_img"><img src="./assets/group.png" alt=""></div>
+            <div class="main__about_img"><img src="./assets/group.png" alt="Group Photo"></div>
             <div class="main__about__title">ACERCA</div>
             <div class="main__about__sub"><p>CLUB HERALDOS</p></div>
-            <div class="main__about__desc">Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus urna neque viverra justo. Vivamus at augue eget arcu dictum. Ultrices gravida dictum fusce ut placerat orci. Aenean et tortor at risus viverra adipiscing at in. Mattis aliquam faucibus purus in massa. Est placerat in egestas erat imperdiet sed. Consequat semper viverra nam libero justo laoreet sit amet. Aliquam etiam erat velit scelerisque in dictum non consectetur a. Laoreet sit amet cursus sit amet. Vel eros donec ac odio tempor orci dapibus. Sem nulla pha retra diam sit amet nisl suscipit adipiscing bibendum. Leo a diam sollicitudi n tempor.</div>
-            <div class="main__about__button"><button>CONTÁCTANOS</button></div>
+            <div class="main__about__desc">El Club Heraldos es una institución deportiva reconocida por su dedicación al desarrollo integral de sus jugadores, tanto en lo físico como en lo personal. Con una fuerte base en valores como el respeto, la disciplina y el trabajo en equipo, el club ha logrado destacar en competiciones locales y regionales. Ofrece programas de entrenamiento para todas las edades y niveles, desde iniciación hasta competencia avanzada. Sus instalaciones están equipadas con tecnología moderna para optimizar el rendimiento de los atletas. El Club Heraldos no solo forma grandes deportistas, sino también personas comprometidas y líderes en su comunidad..</div>
+            <div class="main__about__button"><button class="button">CONTÁCTANOS</button></div>
         </section>
         <section class="main__intro">
             <div class="main__intro__title" >¿POR QUÉ</div>
-            <div class="main__intro__sub"><p>CON HERALDOS</p><img src="./assets/outline/arrow-large-right.png" alt=""/></div>
-            <div class="main__intro__desc">Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.</div>
+            <div class="main__intro__sub"><p>CON HERALDOS</p><img src="./assets/outline/arrow-large-right.png" alt="Left Arrow"/></div>
+            <div class="main__intro__desc">El Club Heraldos destaca por su enfoque en el desarrollo deportivo y personal, ofreciendo entrenamiento profesional y valores como el trabajo en equipo y la disciplina. Con instalaciones modernas y programas para todas las edades, es ideal para quienes buscan crecer en el baloncesto. Además, su ambiente familiar y su historial de éxitos lo convierten en una opción confiable y motivadora.</div>
         </section>
         <section class="main__why">
-            <div class="main__why__left"><img src="./assets/left1.png" alt=""></div>
+            <div class="main__why__left"><img src="./assets/left1.png" alt="Left Nav 2"></div>
             <div class="main__why__item">
-                <img src="./assets/locales.png" alt="">
+                <img src="./assets/locales.png" alt="Locales">
                 <h3>LOCALES</h3>
                 <div></div>
-                <p>Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet  porttitor rhoncus libero justo laoreet sit amet vitae.</p>
-                <button>VER</button>
+                <p>Diseñados para ofrecer un entorno óptimo tanto para el entrenamiento como para la comodidad de sus miembros.</p>
+                <button class="button">VER</button>
             </div>
             <div class="main__why__item">
-                <img src="./assets/psicologo.png" alt="">
+                <img src="./assets/psicologo.png" alt="Psicologos">
                 <h3>PSICÓLOGO</h3>
                 <div></div>
-                <p>Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet  porttitor rhoncus libero justo laoreet sit amet vitae.</p>
-                <button>VER</button>
+                <p>Profesionales especializados en el ámbito deportivo, enfocados en potenciar el rendimiento mental y emocional.</p>
+                <button class="button">VER</button>
             </div>
             <div class="main__why__item">
-                <img src="./assets/horarios.png" alt="">
+                <img src="./assets/horarios.png" alt="Horarios">
                 <h3>HORARIOS</h3>
                 <div></div>
-                <p>Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet  porttitor rhoncus libero justo laoreet sit amet vitae.</p>
-                <button>VER</button>
+                <p>Ofrece horarios flexibles y adaptados a las necesidades de sus miembros, con opciones de entrenamiento en la mañana, tarde y noche.</p>
+                <button class="button">VER</button>
             </div>
             <div class="main__why__item">
-                <img src="./assets/campeonatos.png" alt="">
+                <img src="./assets/campeonatos.png" alt="Campeonatos">
                 <h3>CAMPEONATOS</h3>
                 <div></div>
-                <p>Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet  porttitor rhoncus libero justo laoreet sit amet vitae.</p>
-                <button>VER</button>
+                <p>Participa activamente en diversos campeonatos locales, regionales y nacionales, destacándose por su competitividad y espíritu deportivo.</p>
+                <button class="button">VER</button>
             </div>
-            <div class="main__why__right"><img src="./assets/right1.png" alt=""></div>
+            <div class="main__why__right"><img src="./assets/right1.png" alt="Right Nav 2"></div>
 
         </section>
       </main>
@@ -114,7 +126,7 @@
                 /></a>
               </li>
               <li>
-                <a href="#"><img src="./assets/twitter.png" alt="Twitter" /></a>
+                <a href="https://x.com/club_heraldos" target="_blank"><img src="./assets/twitter.png" alt="Twitter" /></a>
               </li>
               <li>
                 <a href="#"
@@ -140,5 +152,6 @@
           </div>
         </section>
       </footer>
+      <script src="./script/script.js"></script>
 </body>
 </html>

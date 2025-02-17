@@ -1,0 +1,23 @@
+.main__method__item {
+  @include flex(column, "", "", center, "");
+  div {
+    &:first-child {
+      @include flex("", "", center, center, "");
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: linear-gradient(
+        to left,
+        map-get($colores, color2),
+        map-get($colores, color1)
+      );
+      box-shadow: 0 0 10px 15px rgba(13, 13, 13, 0.32);
+      font-size: 4rem;
+      font-weight: bold;
+      color: map-get($colores, color5);
+    }
+    &:last-child {
+      @include flex("", "", "", center, "");
+    }
+  }
+}

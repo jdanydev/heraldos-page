@@ -1,0 +1,31 @@
+.main__why__item {
+  @include flex(column, "", "", center, 20px);
+  @include box(24px, "", "", 40px);
+  background: radial-gradient(
+    map-get($colores, color6),
+    map-get($colores, color4)
+  );
+  img {
+    filter: drop-shadow(0 0 1.5rem black);
+    width: 80%;
+    max-width: 200px;
+  }
+  h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  p{
+    font-size: 0.75rem;
+    line-height: 20px;
+  }
+  div{
+    height: 1px;
+  width: 70%;
+  background-color: map-get($colores, color2 );
+  opacity: 0.33;
+  }
+  button{
+    margin-top: 20px;
+    width: 60%;
+  }
+}

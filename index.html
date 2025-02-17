@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Heraldos Landing Page</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <script type="text/javascript">
+      window.onload = function(){
+      (function(d, script) {
+      script = d.createElement('script');
+      script.type = 'text/javascript';
+      script.async = true;
+      script.src = 'https://w.app/widget-v1/cnobNU.js';
+      d.getElementsByTagName('head')[0].appendChild(script);
+      }(document));
+      };
+      </script>
   </head>
   <body>
     <header>
@@ -27,10 +38,23 @@
         >
           Contáctanos
         </button>
-        <button>Inscripciones</button>
+        <button class="button">Inscripciones</button>
       </div>
       <div class="header__hamburger">
-        <a href="#"><img src="./assets/hamburger.png" alt="Menu" /></a>
+        <a class="open" href="javascript:;" onclick="mostrarMenu() "><img src="./assets/hamburger.png" alt="Menu" /></a>
+        <a class="close" href="javascript:;" onclick="mostrarMenu() "><img src="./assets/close.png" alt="Menu" /></a>
+      </div>
+      <div class="menu__hamburger">
+        <nav>
+          <ul>
+            <li><a href="./">Inicio</a></li>
+            <li><a href="./about.html">Acerca</a></li>
+            <li><a href="./benefit.html">Beneficios</a></li>
+            <li><a href="./method.html">Metodología</a></li>
+            <li><hr></li>
+            <li><a href="./contact.html">Contáctanos</a></li>            
+          </ul>
+        </nav>
       </div>
     </header>
     <main>
@@ -48,13 +72,11 @@
             <span class="special__title">Únete </span> a nosotros
           </div>
           <div class="main__hero__text__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore nisl tincidunt eget.
-            Lectus mauris eros in vitae .
+            Vive la emoción del deporte mientras desarrollas tus habilidades y haces amigos para toda la vida! ¡Inscríbete ya y sé parte de nuestro equipo ganador.
           </div>
           <div class="main__hero__text__button">
-            <button>Elige tu horario</button>
-            <img src="./assets/outline/arrow-small-right.png" alt="" />
+            <button class="button" onclick="javascript:location.href='./horarios.html'">Elige tu horario</button>
+            <img src="./assets/outline/arrow-small-right.png" alt="Right Arrow" />
           </div>
         </div>
         <div class="main__hero__img">
@@ -63,15 +85,15 @@
       </section>
       <section class="main__items">
         <div class="main__items_nav">
-          <img src="./assets/left.png" alt="" />
+          <img src="./assets/left.png" alt="Left Nav" />
         </div>
         <div class="main__items__item">
           <img
             class="main__items__item__img"
             src="./assets/outline/location.png"
-            alt=""
+            alt="Location"
           />
-          <div class="main__items__item__title">Visitanos</div>
+          <div class="main__items__item__title"><a href="./ubicacion.html" >Visitanos</a> </div>
           <div class="main__items__item__detail">
             Jr. Cusco H-12-B Wanchaq-Cusco, Perú
           </div>
@@ -81,9 +103,9 @@
           <img
             class="main__items__item__img"
             src="./assets/outline/phone-call.png"
-            alt=""
+            alt="Call"
           />
-          <div class="main__items__item__title">Llamanos</div>
+          <div class="main__items__item__title"><a href="#">Llamanos</a></div>
           <div class="main__items__item__detail">(+51) 997 902 137</div>
         </div>
         <div class="main__items__separator"></div>
@@ -91,13 +113,13 @@
           <img
             class="main__items__item__img"
             src="./assets/outline/mail.png"
-            alt=""
+            alt="email"
           />
-          <div class="main__items__item__title">Envianos un Mensaje</div>
+          <div class="main__items__item__title"><a href="./contact.html">Envianos un Mensaje</a></div>
           <div class="main__items__item__detail">info@clubheraldos.com</div>
         </div>
         <div class="main__items_nav">
-          <img src="./assets/right.png" alt="" />
+          <img src="./assets/right.png" alt="Right Nav" />
         </div>
       </section>
     </main>
@@ -109,10 +131,10 @@
         <div class="footer__separator"></div>
         <section class="footer__link">
           <ul>
-            <li><a href="#">ACERCA</a></li>
-            <li><a href="#">BENEFICIOS</a></li>
-            <li><a href="#">METODOLOGÍA</a></li>
-            <li><a href="#">ÚNETE AL CLUB</a></li>
+            <li><a href="./about.html">ACERCA</a></li>
+            <li><a href="./benefit.html">BENEFICIOS</a></li>
+            <li><a href="./method.html">METODOLOGÍA</a></li>
+            <li><a href="./contact.html">ÚNETE AL CLUB</a></li>
           </ul>
         </section>
         <div class="footer__separator"></div>
@@ -129,20 +151,20 @@
           <h4>REVISA NUESTRAS REDES</h4>
           <ul>
             <li>
-              <a href="#"><img src="./assets/facebook.png" alt="Facebook" /></a>
+              <a href="https://www.facebook.com/clubheraldoscusco" target="_blank"><img src="./assets/facebook.png" alt="Facebook" /></a>
             </li>
             <li>
-              <a href="#"><img src="./assets/twitter.png" alt="Twitter" /></a>
+              <a href="https://x.com/club_heraldos" target="_blank"><img src="./assets/twitter.png" alt="Twitter" /></a>
             </li>
             <li>
-              <a href="#"><img src="./assets/linkedin.png" alt="LinkedIn" /></a>
+              <a href="https://www.linkedin.com/company/club-baloncesto/about/" target="_blank"><img src="./assets/linkedin.png" alt="LinkedIn" /></a>
             </li>
             <li>
               <a href="#"><img src="./assets/youtube.png" alt="Youtube" /></a>
             </li>
             <li>
-              <a href="#"
-                ><img src="./assets/instagram.png" alt="Instagram"
+              <a href="https://www.instagram.com/clubheraldoscusco/"
+                 target="_blank"><img src="./assets/instagram.png" alt="Instagram"
               /></a>
             </li>
           </ul>
@@ -156,5 +178,6 @@
         </div>
       </section>
     </footer>
+    <script src="./script/script.js"></script>
   </body>
 </html>

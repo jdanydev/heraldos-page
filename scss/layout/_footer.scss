@@ -1,0 +1,58 @@
+footer {
+  section {
+    &:first-child {
+      @include flex("", "", space-around, "", "");
+      section{
+        @include flex("", "", "", center, "");
+        &:last-child{
+          @include flex(column, "", "", center, 20px);
+          margin-top: 20px;
+          ul{
+            @include flex(row, "", "", "", 20px);
+          }
+        }
+      }
+    }
+    &:last-child {
+      div {
+        &:first-child {
+          margin: 50px 0;
+          height: 1px;
+          background: linear-gradient(
+            to left,
+            map-get($colores, color5),
+            map-get($colores, color2) 35%,
+            map-get($colores, color1) 69%,
+            map-get($colores, color5) 100%
+          );
+        }
+        &:last-child {
+          font-size: 0.875rem;
+          font-weight: bold;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .footer__separator {
+    width: 6px;
+    background: linear-gradient(
+      to top,
+      map-get($colores, color5),
+      map-get($colores, color2) 35%,
+      map-get($colores, color1) 69%,
+      map-get($colores, color5) 99%
+    );
+  }
+  .footer__link {
+    @include flex("", "", "", center, "");
+    ul {
+      @include flex(column, "", "", "", 10px);
+      li {
+        margin: 10px 0;
+        font-size: 1rem;
+        font-weight: bold;
+      }
+    }
+  }
+}

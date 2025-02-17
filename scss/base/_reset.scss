@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $miFuente;
+    font-size: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: map-get($colores, text);
+}
+
+ul{
+    list-style: none;
+}
